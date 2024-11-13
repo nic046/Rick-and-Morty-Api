@@ -1,0 +1,27 @@
+.particle {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  background-color: #7cb620;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: rise 12s infinite ease-in-out;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    transform: translateY(-125vh) scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-250vh) scale(2);
+    opacity: 0;
+  }
+}
