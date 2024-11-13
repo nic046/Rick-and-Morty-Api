@@ -40,7 +40,6 @@ function App() {
   return (
     <>
       {loading && <Loader />}
-      {error && <p>{error}</p>}
       {!loading && !error && (
         <>
           <Particles />

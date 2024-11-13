@@ -14,7 +14,7 @@ function Search( {setLocationId, setPage} ) {
             clearError();
             return;
         }
-        if (id < 1 || id > 126) {
+        else if (id < 1 || id > 126) {
             setError("Hey! you must provide an ID from 1 to 126");
             clearError();
             return;
